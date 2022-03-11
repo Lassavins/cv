@@ -1,0 +1,66 @@
+#proyectosPres {
+    display: flex;
+    flex-direction: column;
+}
+
+.listaProyectos {
+    display: flex;
+    width: 100%;
+}
+
+.proyecto {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.proyecto>p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.proyectoImagen {
+    background-color: rgba(202, 202, 202, 0.315);
+    backdrop-filter: blur(4px);
+    height: 40vh;
+    width: 40vh;
+    border-radius: 15px;
+    margin: 0 auto;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.proyectoImagen>a {
+    display: block;
+    height: 100%;
+}
+
+.proyectoImagen>img {
+    width: 40vh;
+    transition: all 0.5s;
+}
+
+.proyectoImagen:hover {
+    height: 44vh;
+    width: 44vh;
+    margin-top: 0;
+    transition: all 0.5s;
+}
+
+.proyectoImagen:hover>img {
+    height: 44vh;
+    width: 44vh;
+    margin-top: 0;
+    transition: all 0.5s;
+}
+
+#impulse>.proyectoImagen {
+    background-image: url(../imgs/impulse.png);
+    background-size: contain;
+}
+
+#spacepedia>.proyectoImagen {
+    background-image: url(../imgs/spacepedia.jpg);
+    background-size: contain;
+}
