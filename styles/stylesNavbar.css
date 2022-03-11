@@ -21,8 +21,6 @@
     letter-spacing: -1px;
 }
 
-.navBar>ul>li>a:hover {}
-
 #proyectos {
     border-left: 1px solid blue;
     border-right: 1px solid blue;
