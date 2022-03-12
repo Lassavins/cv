@@ -4,6 +4,19 @@
     text-align: center;
 }
 
+.filaHabilidades {
+    display: flex;
+    margin: 0 auto;
+}
+
+.filaHabilidades>div {
+    padding: 100px;
+}
+
+.barrasHabilidad {
+    margin-top: -50px;
+}
+
 .barra {
     margin: 0 auto;
     margin-top: 20px;
@@ -14,6 +27,14 @@
     overflow: hidden;
 }
 
+.barra>p {
+    position: absolute;
+    padding-left: 185px;
+    padding-top: 2.5px;
+    color: white;
+    font-weight: bolder;
+}
+
 .barra__relleno {
     color: white;
     font-weight: bold;
@@ -22,29 +43,109 @@
     border-radius: 15px;
 }
 
-#primeraBarra {
-    margin-top: 100px;
-}
-
 #html {
     background-color: rgb(204, 65, 10);
-    width: 390px;
+    width: 0px;
 }
 
 #css {
-    content: '';
     background-color: #1572B6;
     width: 0px;
 }
 
-#habilidadesPres:hover #css {
-    animation-name: bar-progress-99;
+#java {
+    background-color: #b66b15;
+    width: 0px;
+}
+
+#swift {
+    background-color: #b61515;
+    width: 0px;
+}
+
+#sql {
+    background-color: #4015b6;
+    width: 0px;
+}
+
+#git {
+    background-color: #15b673;
+    width: 0px;
+}
+
+#habilidadesPres:hover #html {
+    animation-name: animacionHTML;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes bar-progress-99 {
+#habilidadesPres:hover #css {
+    animation-name: animacionCSS;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#habilidadesPres:hover #java {
+    animation-name: animacionJAVA;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#habilidadesPres:hover #swift {
+    animation-name: animacionSWIFT;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#habilidadesPres:hover #sql {
+    animation-name: animacionSQL;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#habilidadesPres:hover #git {
+    animation-name: animacionGIT;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacionHTML {
+    to {
+        width: 390px;
+    }
+}
+
+@keyframes animacionCSS {
+    to {
+        width: 350px;
+    }
+}
+
+@keyframes animacionJAVA {
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes animacionSWIFT {
+    to {
+        width: 365px;
+    }
+}
+
+@keyframes animacionSQL {
+    to {
+        width: 310px;
+    }
+}
+
+@keyframes animacionGIT {
     to {
         width: 400px;
     }
